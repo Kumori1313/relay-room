@@ -38,7 +38,6 @@ jobs:
       - run: npm run build:pages
         working-directory: source
         env:
-          VITE_RELAY_RUNTIME_ORIGIN: ${{ vars.VITE_RELAY_RUNTIME_ORIGIN }}
           VITE_SUPABASE_URL: ${{ vars.VITE_SUPABASE_URL }}
           VITE_SUPABASE_PUBLISHABLE_KEY: ${{ vars.VITE_SUPABASE_PUBLISHABLE_KEY }}
       - uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3
